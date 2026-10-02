@@ -14,6 +14,7 @@ HTML5
 Netlify
 Github
 Visual Studio Code
+Convertio
 
 ## Live Website
 https://
@@ -25,7 +26,7 @@ How to:
 -Update a CONTENT.md file
 -Add image folder
 -Create ARIA labels
--
+-How to use a div
 
 ## Author
 Platt Weinrick
@@ -41,20 +42,14 @@ Created initial INDEX file
 Added text to CONTENT.md
 Added anchor elements to section-id's
 Added text from CONTENT.md to index.html
-Added 
+Added updates to README.md
 
 ### Update 3
-Added image file
+Added image file for Breslin Center
 Added external links 
 
 ### Update 4
 Added image for browser tab
-Added audio readout for visually impared website visitors
-Added hyperlink to external website to identify the image
-Added title to image for mouse hovering
-
-### Update 11
-Added metadata to header
-
-### Update 18
-Changed broswer tab image
+Added image file for military service
+Added title to images for mouse hovering
+Tested links
