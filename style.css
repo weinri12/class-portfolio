@@ -1,3 +1,32 @@
+:root {
+    --primary-bg: #f7f7f7;
+    --primary-text: #444644;
+    --standard-gap: 40px;
+}
+@media (orientation: portrait) {
+  .container { flex-direction: column; }
+}
+@media (orientation: landscape) {
+  .container { flex-direction: row; }
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: roboto;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+#projects article {
+    margin: var(--standard-gap);
+    background: rgb(221, 219, 219); 
+    border: 1px solid rgb(221, 219, 219);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+nav {
+    background: #288f4a;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
 }
