@@ -53,3 +53,18 @@ Added image for browser tab
 Added image file for military service
 Added title to images for mouse hovering
 Tested links
+
+### Update 5
+In CSS:
+-Added root
+-Added media
+-Added projects
+-Added nav style.css updates
+
+### Update 6
+-Added and logo
+-Moved images to under text
+
+### Update 6
+-Added flag image
+-Reformatted images
