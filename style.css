@@ -39,10 +39,11 @@ main {
 
 .brand img {
     display: block;
-    width: clamp(48px, 12vw, 96px);
+    width: clamp(20px, 12vw, 90px);
     height: auto;
     aspect-ratio: 1;
     object-fit: contain;
+    border-radius: 15px;
 }
 #projects article {
     margin: clamp(1rem, 4vw, var(--standard-gap)) 0;
@@ -53,7 +54,7 @@ main {
 }
 
 nav {
-    background: #8a8bf3;
+    background: #84a6f7;
     color: white;
     padding: 10px;
     margin: 10px;
