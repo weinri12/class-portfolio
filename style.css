@@ -1,28 +1,65 @@
 :root {
     --primary-bg: #f7f7f7;
-    --primary-text: #444644;
+    --secondary-bg: rgba(46, 48, 49, 0.966);
+    --primary-text: hsl(120, 1%, 27%);
+    --secondary: #73a6ef;
     --standard-gap: 40px;
-}
-
-* {
-    box-sizing: border-box;
+    --page-margin: 6rem:
 }
 
 body {
     font-family: roboto;
     background: var(--primary-bg);
     color: var(--primary-text);
+    border-top: 20px solid var(--secondary-bg);
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.4;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 var(--page-margin);
+}
+
+main h1 {
+    font-size: 4em;
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: normal;
+    border-bottom:.5px solid var(--secondary-bg);
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 0;
+}
 img {
     max-width: 100%;
     height: auto;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--standard-gap);
     width: calc(100% - 2rem);
-    max-width: 70rem;
+    max-width: 100rem;
     margin-inline: auto;
 }
 
@@ -44,9 +81,27 @@ main {
     aspect-ratio: 1;
     object-fit: contain;
     border-radius: 15px;
+    transition: transform 0.3s ease;
 }
+
+/* rotate the brand image slightly when hovering over it and increase the size slightly */
+.brand img:hover {
+    transform: rotate(15deg) scale(1.08);
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, mminmax(100px, auto));
+    gap: 1em;
+}
+
+#projects h2 {
+    grid-column: span 2 / span 2;
+}
+
 #projects article {
-    margin: clamp(1rem, 4vw, var(--standard-gap)) 0;
+    margin: 0;
     background: rgb(221, 219, 219); 
     border: 1px solid rgb(221, 219, 219);
     border-radius: 12px;
@@ -54,11 +109,11 @@ main {
 }
 
 nav {
-    background: #84a6f7;
+    background: var(--secondary);
     color: white;
     padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
+    margin-top: 1rem;
+    border-radius: 25px;
     width: calc(100% - 20px);
     box-sizing: border-box;
 }
@@ -68,6 +123,33 @@ nav ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px 24px;
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/* In CSS change the nav buttons background color when hovering over them */
+nav ul li a:hover {
+    background: #dedee0;
+    color: var(--secondary);
+    border-radius: 12px
+}
+
+nav ul li a {
+    color: var(--primary-bg);
+    /* In CSS remove the underline of the words in the navigation section of the website */
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 1rem 2rem;
+    display: inline-block;
+}
+
+footer {
+    padding: padding: clamp(0.875rem, 3vw, 1.25rem);
+    text-align: center;
+    font-size: 0.8em;
 }
