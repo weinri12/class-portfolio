@@ -91,13 +91,30 @@ main {
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, mminmax(100px, auto));
     gap: 1em;
+
+}
+@media (min-width: 600px) {
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(100px, auto));
+        gap: 1em;
+    }
+
+    #projects h2 {
+        grid-column: span 2 / span 2;
+    }
 }
 
-#projects h2 {
+@media (min-width: 1000px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #projects h2 {
     grid-column: span 2 / span 2;
+    }
 }
 
 #projects article {
@@ -106,6 +123,7 @@ main {
     border: 1px solid rgb(221, 219, 219);
     border-radius: 12px;
     padding: clamp(0.875rem, 3vw, 1.25rem);
+    gap: 1em;
 }
 
 nav {
