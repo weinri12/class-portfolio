@@ -65,11 +65,11 @@ In CSS:
 -Added and logo
 -Moved images to under text
 
-### Update 6
+### Update 7
 -Added flag image
 -Reformatted images
 
-### Update 7
+### Update 8
 -Changed Nav section font color/size
 -Changed font size of copyright
 -Used AI to remove the underline of nav buttons text
@@ -78,7 +78,7 @@ In CSS:
 -Added Logo movement and size increase when hovering
 -Changed size of main section font
 
-### Update 8
+### Update 9
 -Added space between pojects to keep them separated when shrinking
 -Added @media for multiple screen sizes
 -Adjusted spacing and wording for contact section
@@ -88,6 +88,7 @@ In CSS:
 -Updated README.md
 -Deployed website
 
-### Update 9
+### Update 10
 -Netlify used older version
 -Didn't work
+-Update to README.md
