@@ -87,3 +87,6 @@ In CSS:
 -Used AI to ensure the font stayed for mobile platforms
 -Updated README.md
 -Deployed website
+
+### Update 9
+-Netlify used older version
