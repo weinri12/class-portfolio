@@ -17,8 +17,7 @@ This was a website built with basic background information about me. The website
 -Convertio
 
 ## Live Website
-https://
-voluble-yeot-f50ef6.netlify.app
+
 
 ## What I Learned
 How to:
@@ -27,6 +26,7 @@ How to:
 -Add image folder
 -Create ARIA labels
 -How to use a div
+-How to use AI in CSS
 
 ## Author
 Platt Weinrick
@@ -68,3 +68,22 @@ In CSS:
 ### Update 6
 -Added flag image
 -Reformatted images
+
+### Update 7
+-Changed Nav section font color/size
+-Changed font size of copyright
+-Used AI to remove the underline of nav buttons text
+-Changed font size of nav button text
+-Used AI to change background color of nav buttons when hovering
+-Added Logo movement and size increase when hovering
+-Changed size of main section font
+
+### Update 8
+-Added space between pojects to keep them separated when shrinking
+-Added @media for multiple screen sizes
+-Adjusted spacing and wording for contact section
+-Removed extra space under H@ by adjusting margin
+-Used AI to rotate the brand image and increase the size
+-Used AI to ensure the font stayed for mobile platforms
+-Updated README.md
+-Deployed website

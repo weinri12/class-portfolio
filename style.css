@@ -1,3 +1,6 @@
+/* using css the font needs to remain roboto on mobile devices */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 :root {
     --primary-bg: #f7f7f7;
     --secondary-bg: rgba(46, 48, 49, 0.966);
@@ -8,11 +11,12 @@
 }
 
 body {
-    font-family: roboto;
+    font-family: "Roboto", sans-serif;
     background: var(--primary-bg);
     color: var(--primary-text);
     border-top: 20px solid var(--secondary-bg);
-    margin: 0;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 * {
@@ -31,18 +35,18 @@ header {
 }
 
 main h1 {
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     line-height: 1.1;
     letter-spacing: -2px;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: normal;
     border-bottom:.5px solid var(--secondary-bg);
-    margin: 0;
-}
+    margin: .5;
+    }
 
 h3 {
     font-size: 1.8em;
@@ -89,43 +93,6 @@ main {
     transform: rotate(15deg) scale(1.08);
 }
 
-#projects {
-    display: grid;
-    gap: 1em;
-
-}
-@media (min-width: 600px) {
-    #projects {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, minmax(100px, auto));
-        gap: 1em;
-    }
-
-    #projects h2 {
-        grid-column: span 2 / span 2;
-    }
-}
-
-@media (min-width: 1000px) {
-    #projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    #projects h2 {
-    grid-column: span 2 / span 2;
-    }
-}
-
-#projects article {
-    margin: 0;
-    background: rgb(221, 219, 219); 
-    border: 1px solid rgb(221, 219, 219);
-    border-radius: 12px;
-    padding: clamp(0.875rem, 3vw, 1.25rem);
-    gap: 1em;
-}
-
 nav {
     background: var(--secondary);
     color: white;
@@ -166,8 +133,81 @@ nav ul li a {
     display: inline-block;
 }
 
+#projects {
+    display: grid;
+    gap: 1em;
+}
+
+/* Resize for mobile users */
+@media (min-width: 600px) {
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(100px, auto));
+        gap: 1em;
+    }
+
+    #projects h2 {
+        grid-column: span 2 / span 2;
+    }
+}
+
+/* Resize for tablet users */
+@media (min-width: 768px) {
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(100px, auto));
+        gap: 1em;
+    }
+
+    #projects h2 {
+        grid-column: span 2 / span 2;
+    }
+}
+/* Resize for normal laptop users */
+@media (min-width: 992px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #projects h2 {
+    grid-column: span 2 / span 2;
+    }
+}
+/* Resize for desktop users */
+@media (min-width: 1200px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #projects h2 {
+    grid-column: span 2 / span 2;
+    }
+}
+
+/* Resize for large screen desktop users */
+@media (min-width: 1300px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #projects h2 {
+    grid-column: span 2 / span 2;
+    }
+}
+
+#projects article {
+    margin: 0;
+    background: rgb(221, 219, 219); 
+    border: 1px solid rgb(221, 219, 219);
+    border-radius: 12px;
+    padding: clamp(0.875rem, 3vw, 1.25rem);
+    gap: 1em;
+}
+
 footer {
-    padding: padding: clamp(0.875rem, 3vw, 1.25rem);
+    padding: clamp(0.875rem, 3vw, 1.25rem);
     text-align: center;
     font-size: 0.8em;
 }
