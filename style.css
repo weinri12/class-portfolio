@@ -5,7 +5,7 @@
     --primary-bg: #f7f7f7;
     --secondary-bg: rgba(46, 48, 49, 0.966);
     --primary-text: hsl(120, 1%, 27%);
-    --secondary: #73a6ef;
+    --secondary: #C3DBF8;
     --standard-gap: 40px;
     --page-margin: 6rem:
 }
@@ -95,7 +95,7 @@ main {
 
 nav {
     background: var(--secondary);
-    color: white;
+    color: #424242;
     padding: 10px;
     margin-top: 1rem;
     border-radius: 25px;
