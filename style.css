@@ -119,7 +119,7 @@ nav ul li {
 
 /* In CSS change the nav buttons background color when hovering over them */
 nav ul li a:hover {
-    background: #dedee0;
+    background: #424242;
     color: var(--secondary);
     border-radius: 12px
 }
