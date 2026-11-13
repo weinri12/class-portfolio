@@ -1,4 +1,4 @@
-# Personal-portfolio
+# Weinrick-portfolio
 
 ## About
 This was a website built with basic background information about me. The website was constructed with HTML and is hosted on Netlify.
@@ -7,6 +7,9 @@ This was a website built with basic background information about me. The website
 -HTML Skeleton
 -Metadata added to the HTML head area
 -Image added with hyperlink to external website
+-Resize the page for mobile users
+-Dark mode capabilities enabled
+-Ulitization of ScrollReveal
 -Deployed with Netlify
 
 ## Technologies Involved
@@ -15,6 +18,8 @@ This was a website built with basic background information about me. The website
 -Github
 -Visual Studio Code
 -Convertio
+-ScrolReveal
+-Javascript
 
 ## Live Website
 
@@ -27,6 +32,8 @@ How to:
 -Create ARIA labels
 -How to use a div
 -How to use AI in CSS
+-Add a utilities.js file
+-Convert the webpage to darkmode with a toggle
 
 ## Author
 Platt Weinrick
@@ -92,3 +99,6 @@ In CSS:
 -Netlify used older version
 -Didn't work
 -Update to README.md
+
+### Update 11
+-Incorporated 

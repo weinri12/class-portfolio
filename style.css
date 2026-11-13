@@ -1,6 +1,7 @@
 /* using css the font needs to remain roboto on mobile devices */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+/* Define CSS variables for colors and spacing */
 :root {
     --primary-bg: #f7f7f7;
     --secondary-bg: rgba(46, 48, 49, 0.966);
@@ -10,6 +11,7 @@
     --page-margin: 6rem;
 }
 
+/* Style the body of the page */
 body {
     font-family: "Roboto", sans-serif;
     background: var(--primary-bg);
@@ -19,21 +21,42 @@ body {
     max-width: 900px;
 }
 
+/* Dark mode styles */
+body.dark-mode {
+    --primary-bg: #171a1f;
+    --secondary-bg: #39414d;
+    --primary-text: #f0f2f5;
+    --secondary: #4680cb;
+}
+
+/* Style the links in dark mode */
+body.dark-mode main a {
+    color: #5a8de0;
+}
 * {
     box-sizing: border-box;
 }
 
+/* Style the project articles in dark mode */
+body.dark-mode #projects article {
+    background: #262b33;
+    border-color: #3b424d;
+}
+
+/* Style the paragraphs */
 p {
     font-size: 1.4em;
     line-height: 1.4;
 }
 
+/* Style the header */
 header {
     text-align: center;
     padding: 1rem 0;
     margin: 0 var(--page-margin);
 }
 
+/* Style the h1 elements */
 main h1 {
     font-size: 3em;
     text-align: center;
@@ -41,6 +64,7 @@ main h1 {
     letter-spacing: -2px;
 }
 
+/* Style the h2 elements */ 
 h2 {
     font-size: 2.5em;
     font-weight: normal;
@@ -48,16 +72,20 @@ h2 {
     margin: .5rem;
     }
 
+/* Style the h3 elements */
 h3 {
     font-size: 1.8em;
     font-weight: normal;
     margin: 0;
 }
+
+/* Style the images to be responsive */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Style the main content area */
 main {
     display: flex;
     flex-direction: column;
@@ -67,17 +95,72 @@ main {
     margin-inline: auto;
 }
 
+/* Style the site header */
 .site-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
+/* Added CSS for theme switcher */
+.theme-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    cursor: pointer;
+    align-self: flex-end;
+}
+/* Style the checkbox to look like a toggle switch */
+.theme-switch input {
+    appearance: none;
+    width: 2.8rem;
+    height: 1.5rem;
+    margin: 0;
+    border-radius: 999px;
+    background: #777;
+    position: relative;
+    cursor: pointer;
+}
+/* Style the toggle knob */
+.theme-switch input::before {
+    content: "";
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    background: white;
+    transition: transform 0.2s ease;
+}
 
+/* Change the background color of the switch when checked */
+.theme-switch input:checked {
+    background: #30445e;
+}
+
+/* Move the toggle knob to the right when checked */
+.theme-switch input:checked::before {
+    transform: translateX(1.3rem);
+}
+
+/* Add focus styles for accessibility */
+.theme-switch input:focus-visible {
+    outline: 3px solid #2878c8;
+    outline-offset: 3px;
+}
+/* Style the label text */
+.theme-switch span {
+    font-size: 0.9rem;
+    color: var(--primary-text);
+}
+
+/* Style the brand/logo */
 .brand {
     display: block;
 }
 
+/* Style the brand image */ 
 .brand img {
     display: block;
     width: clamp(20px, 12vw, 90px);
@@ -93,6 +176,7 @@ main {
     transform: rotate(15deg) scale(1.08);
 }
 
+/* Style the navigation bar */  
 nav {
     background: var(--secondary);
     color: #3b3a3a;
@@ -103,6 +187,7 @@ nav {
     box-sizing: border-box;
 }
 
+/* Style the navigation links */    
 nav ul {
     display: flex;
     justify-content: center;
@@ -113,6 +198,7 @@ nav ul {
     padding: 0;
 }
 
+/* Style the navigation list items */   
 nav ul li {
     display: inline-block;
 }
@@ -124,6 +210,7 @@ nav ul li a:hover {
     border-radius: 12px
 }
 
+/* Style the navigation links */
 nav ul li a {
     color: var(--primary-text);
     /* In CSS remove the underline of the words in the navigation section of the website */
@@ -132,10 +219,33 @@ nav ul li a {
     padding: 1rem 2rem;
     display: inline-block;
 }
+/* In CSS change the nav buttons background color when hovering over them */
+body.dark-mode nav {
+    background: #252c36;
+    color: #f0f2f5;
+}
 
+/* Style the navigation links */
+body.dark-mode nav ul li a {
+    color: #f0f2f5;
+}
+
+/* In CSS change the nav buttons background color when hovering over them */
+body.dark-mode nav ul li a:hover {
+    background: #5a8de0;
+    color: #ffffff;
+}
+
+/* Style the projects section */
 #projects {
     display: grid;
     gap: 1em;
+}
+
+/* Style the project articles */
+#projects article {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
 }
 
 /* Resize for mobile users */
@@ -197,6 +307,7 @@ nav ul li a {
     }
 }
 
+/* Style the project articles */
 #projects article {
     margin: 0;
     background: rgb(221, 219, 219); 

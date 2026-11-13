@@ -13,6 +13,9 @@
     <title>Platt Weinrick</title>
     <!--Added image to browser tab-->
     <link rel="icon" href="images/aurora.png" type="image/png"/>
+        <!-- Added ScrollReveal library for animations -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="utilities.js"></script>
 </head>
 <body>
     <!--Added image as a page logo in header-->
@@ -20,7 +23,11 @@
         <a href="index.html" class="brand" aria-label="Platt Weinrick home">
             <img src="images/w.avif" alt="Platt Weinrick logo">
         </a>
-
+        <!-- Theme switcher for dark mode -->
+        <label class="theme-switch">
+          <span>Dark mode</span>
+          <input id="theme-toggle" type="checkbox" role="switch">
+        </label>
         <nav aria-label="Main Navigation">
             <!--Navigation links-->
             <ul>
@@ -30,7 +37,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="content">
         <!--Main content-->
         <section>
             <!--Added info about me-->
@@ -95,6 +102,5 @@
         <!--Footer content-->
         <p>Copyright &copy; 2026 Platt Weinrick</p>
     </footer>
-    
 </body>
 </html>
